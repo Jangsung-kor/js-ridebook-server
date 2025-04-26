@@ -6,13 +6,13 @@ import com.jangsung.js_ridebook.dto.CycleLogDto;
 
 public interface CycleLogService
 {
-    List<CycleLogDto> getAll();
+    List<CycleLogDto> getCycleLogs();
 
-    CycleLogDto getById(Long id);
+    CycleLogDto getLogDetailById(Long id);
 
-    void insert(CycleLogDto dto);
+    void addCycleLog(CycleLogDto dto);
 
-    void update(CycleLogDto dto);
+    void updateCycleLog(CycleLogDto dto);
 
-    void delete(Long id);
+    void deleteCycleLog(Long id);
 }

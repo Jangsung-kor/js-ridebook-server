@@ -23,33 +23,59 @@ public class CycleLogController
         this.cycleLogService = cycleLogService;
     }
 
+    /**
+     * 자전거 로그 목록 조회
+     * 
+     * @return
+     */
     @GetMapping
-    public List<CycleLogDto> getAllLogs()
+    public List<CycleLogDto> getCycleLogs()
     {
-        return cycleLogService.getAll();
+        return cycleLogService.getCycleLogs();
     }
 
+    /**
+     * 자전거 로그 상세 정보 조회
+     * 
+     * @param id
+     * @return
+     */
     @GetMapping("/{id}")
-    public CycleLogDto getLog(@PathVariable Long id)
+    public CycleLogDto getLogDetailById(@PathVariable Long id)
     {
-        return cycleLogService.getById(id);
+        return cycleLogService.getLogDetailById(id);
     }
 
+    /**
+     * 자전거 로그 추가
+     * 
+     * @param dto
+     */
     @PostMapping
-    public void createLog(@RequestBody CycleLogDto dto)
+    public void addCycleLog(@RequestBody CycleLogDto dto)
     {
-        cycleLogService.insert(dto);
+        cycleLogService.addCycleLog(dto);
     }
 
+    /**
+     * 자전거 로그 수정
+     * 
+     * @param dto
+     */
     @PutMapping
-    public void updateLog(@RequestBody CycleLogDto dto)
+    public void updateCycleLog(@RequestBody CycleLogDto dto)
     {
-        cycleLogService.update(dto);
+        cycleLogService.updateCycleLog(dto);
     }
 
+    /**
+     * 자전거 로그 삭제
+     * 
+     * @param id
+     */
     @DeleteMapping("/{id}")
-    public void deleteLog(@PathVariable Long id)
+    public void deleteCycleLog(@PathVariable Long id)
     {
-        cycleLogService.delete(id);
+        cycleLogService.deleteCycleLog(id);
     }
 }

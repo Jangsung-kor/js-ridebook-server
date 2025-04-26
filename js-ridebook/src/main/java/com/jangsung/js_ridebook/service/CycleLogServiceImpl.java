@@ -17,31 +17,31 @@ public class CycleLogServiceImpl implements CycleLogService
     }
 
     @Override
-    public List<CycleLogDto> getAll()
+    public List<CycleLogDto> getCycleLogs()
     {
         return cycleLogMapper.selectAll();
     }
 
     @Override
-    public CycleLogDto getById(Long id)
+    public CycleLogDto getLogDetailById(Long id)
     {
         return cycleLogMapper.selectById(id);
     }
 
     @Override
-    public void insert(CycleLogDto dto)
+    public void addCycleLog(CycleLogDto dto)
     {
         cycleLogMapper.insert(dto);
     }
 
     @Override
-    public void update(CycleLogDto dto)
+    public void updateCycleLog(CycleLogDto dto)
     {
         cycleLogMapper.update(dto);
     }
 
     @Override
-    public void delete(Long id)
+    public void deleteCycleLog(Long id)
     {
         cycleLogMapper.delete(id);
     }

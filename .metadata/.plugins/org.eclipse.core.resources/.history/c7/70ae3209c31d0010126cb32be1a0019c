@@ -1,0 +1,7 @@
+package com.example.js_ridebook.domain.cyclelog.mapper;
+
+@Mapper
+public interface CycleLogMapper
+{
+
+}

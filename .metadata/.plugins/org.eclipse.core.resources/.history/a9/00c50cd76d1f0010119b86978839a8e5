@@ -1,0 +1,8 @@
+spring.application.name=js-ridebook
+
+# 서버 포트 설정
+server.port=8080
+
+# MariaDB 연결 정보
+
+# MyBatis 설정

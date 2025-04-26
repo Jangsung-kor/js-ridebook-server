@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.jangsung.js_ridebook.mapper.CycleLogMapper">
+	
+	<select id="selectAll" resultType="com.jangsung.js_ridebook.dto.CycleLogDto">
+		SELECT * FROM cycle_log ORDER BY cycle_date DESC
+	</select>
+	
+	
+</mapper>

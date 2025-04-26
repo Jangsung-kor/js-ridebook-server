@@ -1,0 +1,6 @@
+package com.example.js_ridebook.domain.cyclelog.entity;
+
+public class CycleLog
+{
+    private Long id;
+}

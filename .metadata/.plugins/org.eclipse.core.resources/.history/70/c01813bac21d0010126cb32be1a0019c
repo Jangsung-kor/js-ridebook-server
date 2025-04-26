@@ -1,0 +1,12 @@
+package com.example.js_ridebook.domain.cyclelog.service;
+
+import com.example.js_ridebook.domain.cyclelog.mapper.GenericMapper;
+
+public abstract class GenericServiceImpl<D, E> implements GenericService<D, E>
+{
+    protected final GenericMapper<D, E> mapper;
+
+    public GenericServiceImpl(GenericMapper<D, E> mapper) {
+        this.mapper = mapper;
+    }
+}

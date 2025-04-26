@@ -1,0 +1,6 @@
+package com.example.js_ridebook.domain.cyclelog.service;
+
+public class CycleLogServiceImpl
+{
+
+}

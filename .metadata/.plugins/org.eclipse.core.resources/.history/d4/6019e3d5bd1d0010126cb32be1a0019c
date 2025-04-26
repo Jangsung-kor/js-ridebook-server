@@ -1,0 +1,19 @@
+package com.example.js_ridebook.domain.cyclelog.mapper;
+
+import com.example.js_ridebook.domain.cyclelog.dto.CycleLogDto;
+import com.example.js_ridebook.domain.cyclelog.entity.CycleLog;
+
+public class CycleLogMapper implements GenericMapper<CycleLogDto, CycleLog>
+{
+    @Override
+    public CycleLog toDto(CycleLog entity)
+    {
+
+    }
+
+    @Override
+    public CycleLog toEntity(CycleLogDto dto)
+    {
+
+    }
+}

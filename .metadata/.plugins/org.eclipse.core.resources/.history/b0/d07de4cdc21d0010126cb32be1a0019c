@@ -1,0 +1,16 @@
+package com.example.js_ridebook.domain.cyclelog.service;
+
+import java.util.List;
+
+public interface GenericService<D, E>
+{
+    List<D> findAll();
+
+    D findById(Long id);
+
+    void create(D dto);
+
+    void update(D dto);
+
+    void delete(Long id);
+}

@@ -1,0 +1,14 @@
+package com.example.js_ridebook.domain.cyclelog.entity;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class CycleLog
+{
+    @GeneratedValue()
+    private Long id;
+    private LocalDate cycleDate;
+    private double distance;
+    private double elevationGain;
+    private LocalDateTime createdAt;
+}

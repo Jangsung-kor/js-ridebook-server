@@ -1,0 +1,44 @@
+package com.jangsung.js_ridebook.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.jangsung.js_ridebook.dto.CycleLogDto;
+import com.jangsung.js_ridebook.mapper.CycleLogMapper;
+
+@Service
+public class CycleLogServiceImpl implements CycleLogService
+{
+    private final CycleLogMapper cycleLogMapper;
+
+    @Override
+    public List<CycleLogDto> getAll()
+    {
+        return cycleLogMapper.selectAll();
+    }
+
+    @Override
+    public CycleLogDto getById(Long id)
+    {
+        return cycleLogMapper.selectById(id);
+    }
+
+    @Override
+    public void insert(CycleLogDto dto)
+    {
+        cycleLogMapper.insert(dto);
+    }
+
+    @Override
+    public void update(CycleLogDto dto)
+    {
+        cycleLogMapper.update(dto);
+    }
+
+    @Override
+    public void delete(Long id)
+    {
+        cycleLogMapper.delete(id);
+    }
+}

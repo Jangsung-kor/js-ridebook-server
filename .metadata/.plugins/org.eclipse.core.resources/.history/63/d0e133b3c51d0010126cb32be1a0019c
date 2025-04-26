@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.jangsung.js_ridebook.mapper.CycleLogMapper">
+	
+	<select id="selectAll" resultType="com.jangsung.js_ridebook.dto.CycleLogDto">
+		SELECT * FROM cycle_log ORDER BY cycle_date DESC
+	</select>
+	
+	<select id="selectById" resultType="com.jangsung.js_ridebook.dto.CycleLogDto">
+		SELECT * FROM cycle_log WHERE id = #{id}
+	</select>
+	
+	<insert id="insert" parameterType="com.jangsung.js_ridebook.dto.CycleLogDto">
+		INSERT INTO cycle_log (cycle_date, distance, elevation_gain, created_at)
+		VALUES (#{cycleDate}, #{distance}, #{elevationGain}, NOW())
+	</insert>
+	
+	<update id="update" parameterType="com.jangsung.js_ridebook.dto.CycleLogDto">
+		UPDATE cycle_log
+		SET 
+			cycle_date = #{cycleDate}, distance = #{distance}, elevation_gain = #{elevationGain}
+		WHERE id = #{id}
+	</update>
+</mapper>

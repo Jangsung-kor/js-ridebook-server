@@ -1,0 +1,18 @@
+package com.example.js_ridebook.mapper;
+
+import java.util.List;
+
+import com.example.js_ridebook.dto.CycleLogDto;
+
+public interface CycleLogMapper
+{
+    List<CycleLogDto> findAll();
+
+    CycleLogDto findById(Long id);
+
+    int insert(CycleLogDto dto);
+
+    int update(CycleLogDto dto);
+
+    int delete(Long id);
+}

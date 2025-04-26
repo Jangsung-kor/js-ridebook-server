@@ -1,0 +1,5 @@
+package com.example.js_ridebook.domain.cyclelog.mapper;
+
+public interface GenericMapper {
+
+}

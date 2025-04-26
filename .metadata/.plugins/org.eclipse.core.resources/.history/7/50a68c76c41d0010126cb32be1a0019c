@@ -1,0 +1,13 @@
+package com.example.js_ridebook;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class JsRidebookApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(JsRidebookApplication.class, args);
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.example.js_ridebook.domain.cyclelog.service;
+
+import java.util.List;
+
+import com.example.js_ridebook.domain.cyclelog.dto.CycleLogDto;
+import com.example.js_ridebook.domain.cyclelog.mapper.CycleLogMapper;
+
+public class CycleLogServiceImpl implements CycleLogService
+{
+    private final CycleLogMapper cycleLogMapper;
+
+    @Override
+    public List<CycleLogDto> getAll()
+    {
+
+    }
+}

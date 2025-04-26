@@ -1,0 +1,15 @@
+package com.jangsung.js_ridebook;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@MapperScan("com.jangsung.js_ridebook.mapper")
+@SpringBootApplication
+public class JsRidebookApplication
+{
+    public static void main(String[] args)
+    {
+        SpringApplication.run(JsRidebookApplication.class,args);
+    }
+}

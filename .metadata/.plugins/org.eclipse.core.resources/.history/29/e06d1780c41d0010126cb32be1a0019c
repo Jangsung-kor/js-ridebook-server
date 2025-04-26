@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.example.js_ridebook.mapper.CycleLogMapper">
+	<select id="selectAll" resultType="com.example.">
+	
+	</select>
+</mapper>

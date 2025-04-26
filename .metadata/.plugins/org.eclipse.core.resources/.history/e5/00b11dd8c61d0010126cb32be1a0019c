@@ -1,0 +1,17 @@
+package com.jangsung.js_ridebook.service;
+
+import java.util.List;
+
+import com.jangsung.js_ridebook.dto.CycleLogDto;
+import com.jangsung.js_ridebook.mapper.CycleLogMapper;
+
+public class CycleLogServiceImpl implements CycleLogService
+{
+    private final CycleLogMapper cycleLogMapper;
+
+    @Override
+    public List<CycleLogDto> getAll()
+    {
+        return cycleLogMapper.selectAll();
+    }
+}

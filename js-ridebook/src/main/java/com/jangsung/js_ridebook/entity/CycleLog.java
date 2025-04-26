@@ -1,0 +1,65 @@
+package com.jangsung.js_ridebook.entity;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class CycleLog
+{
+    private Long id;
+    private LocalDate cycleDate;
+    private double distance;
+    private double elevationGain;
+    private LocalDateTime createdAt;
+
+    // --- Getters and Setters ---
+
+    public Long getId()
+    {
+        return id;
+    }
+
+    public void setId(Long id)
+    {
+        this.id = id;
+    }
+
+    public LocalDate getCycleDate()
+    {
+        return cycleDate;
+    }
+
+    public void setCycleDate(LocalDate cycleDate)
+    {
+        this.cycleDate = cycleDate;
+    }
+
+    public double getDistance()
+    {
+        return distance;
+    }
+
+    public void setDistance(double distance)
+    {
+        this.distance = distance;
+    }
+
+    public double getElevationGain()
+    {
+        return elevationGain;
+    }
+
+    public void setElevationGain(double elevationGain)
+    {
+        this.elevationGain = elevationGain;
+    }
+
+    public LocalDateTime getCreatedAt()
+    {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt)
+    {
+        this.createdAt = createdAt;
+    }
+}

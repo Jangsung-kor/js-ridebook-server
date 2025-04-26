@@ -1,0 +1,6 @@
+package com.jangsung.js_ridebook.service;
+
+public class CycleLogServiceImpl
+{
+
+}

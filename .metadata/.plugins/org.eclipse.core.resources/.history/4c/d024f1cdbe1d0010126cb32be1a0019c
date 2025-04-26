@@ -1,0 +1,28 @@
+package com.example.js_ridebook.domain.cyclelog.mapper;
+
+import com.example.js_ridebook.domain.cyclelog.dto.CycleLogDto;
+import com.example.js_ridebook.domain.cyclelog.entity.CycleLog;
+
+public class CycleLogMapper implements GenericMapper<CycleLogDto, CycleLog>
+{
+    @Override
+    public CycleLogDto toDto(CycleLog entity)
+    {
+        if (entity == null)
+            return null;
+
+        CycleLogDto dto = new CycleLogDto();
+        dto.setId(entity.getId());
+        dto.setCycleDate(entity.getCycleDate());
+        dto.setDistance(entity.getDistance());
+        dto.setElevationGain(entity.getElevationGain());
+        dto.setCreatedAt(entity.getCreatedAt());
+        return dto;
+    }
+
+    @Override
+    public CycleLog toEntity(CycleLogDto dto)
+    {
+
+    }
+}

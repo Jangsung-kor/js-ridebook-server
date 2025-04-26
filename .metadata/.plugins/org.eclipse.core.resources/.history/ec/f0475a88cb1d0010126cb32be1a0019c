@@ -1,0 +1,16 @@
+package com.jangsung.js_ridebook.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jangsung.js_ridebook.service.CycleLogService;
+
+@RestController @RequestMapping("/api/cycle-log")
+public class CycleLogController
+{
+    private final CycleLogService cycleLogService;
+
+    public CycleLogController(CycleLogService cycleLogService) {
+        this.cycleLogService = cycleLogService;
+    }
+}

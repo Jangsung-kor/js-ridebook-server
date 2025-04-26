@@ -1,0 +1,12 @@
+package com.example.js_ridebook.domain.cyclelog.mapper;
+
+/**
+ * DTO <-> Entity 변환하는 매퍼 인터페이스
+ * 
+ * @param <D> : DTO 클래스 타입
+ * @param <E> : Entity 클래스 타입
+ */
+public interface GenericMapper<D, E>
+{
+
+}
